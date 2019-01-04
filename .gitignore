@@ -1,0 +1,5 @@
+.remote
+.vscode
+.quasar
+ltdne.code-workspace
+node_modules/
