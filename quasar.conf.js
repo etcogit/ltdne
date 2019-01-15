@@ -5,7 +5,8 @@ module.exports = function (ctx) {
     // app plugins (/src/plugins)
     plugins: [
       'i18n',
-      'axios'
+      'axios',
+      'vuelidate'
     ],
     css: [
       'app.styl'
@@ -20,6 +21,7 @@ module.exports = function (ctx) {
     supportIE: true,
     build: {
       scopeHoisting: true,
+      distDir: 'prod_gui/dist/' + ctx.modeName + '-' + ctx.themeName,
       // vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
@@ -44,8 +46,10 @@ module.exports = function (ctx) {
       components: [
         'QBtn',
         'QChatMessage',
+        'QCheckbox',
         'QCollapsible',
         'QDialog',
+        'QField',
         'QIcon',
         'QInput',
         'QItem',
@@ -61,7 +65,8 @@ module.exports = function (ctx) {
         'QPageContainer',
         'QToolbar',
         'QToolbarTitle',
-        'QTooltip'
+        'QTooltip',
+        'QUploader'
       ],
       directives: [
         'Ripple'

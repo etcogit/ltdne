@@ -117,3 +117,4 @@ data/
 .env
 node_modules/
 config/
+ecosystem.config.js

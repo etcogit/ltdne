@@ -10,6 +10,14 @@ const routes = [
       { path: '/register', name: 'register', component: () => import('pages/SignIn') },
       { path: '/chat', name: 'chat', component: () => import('pages/Chat'), meta: { requiresAuth: true } }
     ]
+  },
+  {
+    path: '/nivelles',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Nivelles_Home.vue') },
+      { path: 'nivelavelo', name: 'nivelavelo', component: () => import('pages/Nivelles_Nivelavelo.vue') }
+    ]
   }
 ]
 

@@ -3,3 +3,13 @@
 .quasar
 ltdne.code-workspace
 node_modules/
+dist/
+prod_api/
+prod_gui/
+.env
+prodFrontendServer.js
+.babelrc
+.editorconfig
+.postcssrc.js
+.stylintrc
+ecosystem.config.js
