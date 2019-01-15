@@ -110,3 +110,10 @@ $RECYCLE.BIN/
 # Others
 lib/
 data/
+
+# etco
+.editorconfig
+.eslintrc.json
+.env
+node_modules/
+config/
